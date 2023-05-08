@@ -24,7 +24,7 @@ public class JDBCExample {
             Class.forName(JDBC_DRIVER);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = conn.createStatement();
-            String sql = "SELECT id, name, course_id FROM students; SELECT email, password FROM users;";
+            String sql = "SELECT id, name, course_id FROM students;";
 
             ResultSet resultSet = stmt.executeQuery(sql);
 
